@@ -4,6 +4,10 @@ Overview -create a django todo web app where user can create his everyday schedu
 _______________________________________________________________________________________________________________________________________
 __USAGE__
 
+*MAKE SURE YOU HAVE POSTGRESQL SERVER INSTALLED AND RUNNING SERVICE*
+*USING YOUR postgres command line tool, create a database*
+*Add the details of database, login accounts into the file django-todo/todolist/settings.py under database section*
+
 Default page redirects to login screen
 You can login using following credentials
 username: dummy
