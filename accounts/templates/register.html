@@ -1,0 +1,25 @@
+{% extends 'baselogin.html' %}
+
+
+
+{% block content %}
+    <div class="title"><h1>Register</h1></div>
+    <div class="container1">
+        <div class="formbox">
+
+            <form method="POST" class="formbox">
+                {% csrf_token %}
+                <p>Username</p>
+                <input class="input-box" name="username" type="text" placeholder="username or email">
+                <p>Email</p>
+                <input class="input-box" name="email" type="email" placeholder="username or email">
+                <p>Password</p>
+                <input class="input-box" name="password" type="password" placeholder="password">
+                <input id="submit-button" type="submit" value="Register">                     
+                <a id="login-button" href="{% url 'login' %}">Log in instead</a>
+            </form>
+        </div>
+    </div>
+    
+
+{% endblock %}
